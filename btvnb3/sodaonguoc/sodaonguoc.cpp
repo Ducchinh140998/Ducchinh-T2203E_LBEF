@@ -4,11 +4,9 @@ int main(){
 	int n; 
 	printf(" hay nhap n: ");
 	scanf("%d",&n);
-	int i=0;
-	while(n>0){
-		i=i*10+n%10;
-		i++;
-		n/=10;
+    int t=0;
+    for( ;n!=0;n/=10){
+    	t=t*10+n%10;
 	}
-	printf(" so dao nguoc cua n:",i);
+	printf(" so dao nguoc: %d \n",t);
 }

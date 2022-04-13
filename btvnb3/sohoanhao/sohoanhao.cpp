@@ -6,15 +6,15 @@ int main(){
 	scanf("%d",&n);
 	int i=1;
 	int s=0;
-	while(n%i==0){
-		if(i<n){
-			s+=i;
-		    i++;
-		}
+	while(i<n){
+	        n%i==0;
+	    	s+=i;
+	    	i++;
 	}
 	if(s==n){
-		printf(" la so hoan hao",n);
+		printf(" la so hoan hao %d",n);
+		
 	}else{
-		printf("ko la so hoan hao",n);
+		printf("ko la so hoan hao %d",n);
 	}
 }
